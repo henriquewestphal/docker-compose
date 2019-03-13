@@ -1,0 +1,37 @@
+version: "3"
+services:
+
+  jenkins:
+    image: 'jenkins/jenkins:lts'
+    networks:
+      - frontend
+    environment:
+      JAVA_OPTS: "-Djava.awt.headless=true"
+      JENKINS_HOST_HOME: "/data/jenkins"
+    ports:
+      - '8181:8080'
+      - '8443:8443'
+      - '50000:50000'
+    volumes:
+      - /data/jenkins_home:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /data/tomcat/webapps:/tomcat
+
+  tomcat:
+    image: tomcat:latest
+    networks:
+      - backend
+      - frontend
+    ports:
+      - '8888:8080'
+      - '9000:8000'
+    environment:
+      - JPDA_ADDRESS=8000
+      - JPDA_TRANSPORT=dt_socke
+    volumes:
+            # - /data/tomcat/conf:/usr/local/tomcat/conf
+      - /data/tomcat/webapps:/usr/local/tomcat/webapps
+
+networks:
+  frontend:
+  backend:

@@ -1,0 +1,1131 @@
+Started by user [8mha:////4OD9j0QHOWHHSL5aw0vBHIeI0kPUYpezn3NhhujZAqmTAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgZu/dLi1CL9xJTczDwAg9OS0cAAAAA=[0mhenrique
+Building in workspace /var/jenkins_home/workspace/teste2
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/henriquewestphal/argentum-web.git # timeout=10
+Fetching upstream changes from https://github.com/henriquewestphal/argentum-web.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/henriquewestphal/argentum-web.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 56b8432c7a4dfc708de0969be3d354f15e3607cf (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 56b8432c7a4dfc708de0969be3d354f15e3607cf
+Commit message: "WS de negociações utilizado no curso"
+ > git rev-list --no-walk 56b8432c7a4dfc708de0969be3d354f15e3607cf # timeout=10
+[teste2] $ /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Apache_Maven_3.6.0/bin/mvn package -X
+Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T18:41:47Z)
+Maven home: /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Apache_Maven_3.6.0
+Java version: 1.8.0_181, vendor: Oracle Corporation, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: en, platform encoding: UTF-8
+OS name: "linux", version: "4.20.13-200.fc29.x86_64", arch: "amd64", family: "unix"
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: javax.annotation.* < plexus.core
+[DEBUG]   Imported: javax.annotation.security.* < plexus.core
+[DEBUG]   Imported: javax.enterprise.inject.* < plexus.core
+[DEBUG]   Imported: javax.enterprise.util.* < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.fusesource.jansi.* < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: org.slf4j.helpers.* < plexus.core
+[DEBUG]   Imported: org.slf4j.spi.* < plexus.core
+[DEBUG] Populating class realm maven.api
+[INFO] Error stacktraces are turned on.
+[DEBUG] Message scheme: color
+[DEBUG] Message styles: debug info warning error success failure strong mojo project
+[DEBUG] Reading global settings from /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Apache_Maven_3.6.0/conf/settings.xml
+[DEBUG] Reading user settings from /var/jenkins_home/.m2/settings.xml
+[DEBUG] Reading global toolchains from /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Apache_Maven_3.6.0/conf/toolchains.xml
+[DEBUG] Reading user toolchains from /var/jenkins_home/.m2/toolchains.xml
+[DEBUG] Using local repository at /var/jenkins_home/.m2/repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /var/jenkins_home/.m2/repository
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project br.com.caelum.argentum:argentum-web:war:1.0.0-SNAPSHOT: (none)
+[DEBUG] Looking up lifecycle mappings for packaging war from ClassRealm[plexus.core, parent: null]
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: br.com.caelum.argentum:argentum-web:war:1.0.0-SNAPSHOT
+[DEBUG] Tasks:   [package]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] ----------------< br.com.caelum.argentum:argentum-web >-----------------
+[INFO] Building argentum-web 1.0.0-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       br.com.caelum.argentum:argentum-web:1.0.0-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile, runtime, test]
+[DEBUG] Repositories (dependencies): [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.jacoco:jacoco-maven-plugin:0.7.6.201602180812:prepare-agent (default)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <address>${jacoco.address}</address>
+  <append>${jacoco.append}</append>
+  <classDumpDir>${jacoco.classDumpDir}</classDumpDir>
+  <destFile default-value="${project.build.directory}/jacoco.exec">${jacoco.destFile}</destFile>
+  <dumpOnExit>${jacoco.dumpOnExit}</dumpOnExit>
+  <exclClassLoaders>${jacoco.exclClassLoaders}</exclClassLoaders>
+  <inclBootstrapClasses>${jacoco.inclBootstrapClasses}</inclBootstrapClasses>
+  <inclNoLocationClasses>${jacoco.inclNoLocationClasses}</inclNoLocationClasses>
+  <jmx>${jacoco.jmx}</jmx>
+  <output>${jacoco.output}</output>
+  <pluginArtifactMap>${plugin.artifactMap}</pluginArtifactMap>
+  <port>${jacoco.port}</port>
+  <project>${project}</project>
+  <propertyName>${jacoco.propertyName}</propertyName>
+  <sessionId>${jacoco.sessionId}</sessionId>
+  <skip default-value="false">${jacoco.skip}</skip>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution>${mojoExecution}</mojoExecution>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">${maven.compiler.target}</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+  <mavenSession default-value="${session}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:testResources (default-testResources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.testResources}"/>
+  <session default-value="${session}"/>
+  <skip>${maven.test.skip}</skip>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile (default-testCompile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.testClasspathElements}"/>
+  <compileSourceRoots default-value="${project.testCompileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedTestSourcesDirectory default-value="${project.build.directory}/generated-test-sources/test-annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution>${mojoExecution}</mojoExecution>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skip>${maven.test.skip}</skip>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">${maven.compiler.target}</target>
+  <testSource>${maven.compiler.testSource}</testSource>
+  <testTarget>${maven.compiler.testTarget}</testTarget>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+  <mavenSession default-value="${session}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <argLine>${argLine}</argLine>
+  <basedir default-value="${basedir}"/>
+  <childDelegation default-value="false">${childDelegation}</childDelegation>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <debugForkedProcess>${maven.surefire.debug}</debugForkedProcess>
+  <disableXmlReport default-value="false">${disableXmlReport}</disableXmlReport>
+  <enableAssertions default-value="true">${enableAssertions}</enableAssertions>
+  <excludedGroups>${excludedGroups}</excludedGroups>
+  <failIfNoSpecifiedTests>${surefire.failIfNoSpecifiedTests}</failIfNoSpecifiedTests>
+  <failIfNoTests>${failIfNoTests}</failIfNoTests>
+  <forkMode default-value="once">${forkMode}</forkMode>
+  <forkedProcessTimeoutInSeconds>${surefire.timeout}</forkedProcessTimeoutInSeconds>
+  <groups>${groups}</groups>
+  <junitArtifactName default-value="junit:junit">${junitArtifactName}</junitArtifactName>
+  <jvm>${jvm}</jvm>
+  <localRepository default-value="${localRepository}"/>
+  <objectFactory>${objectFactory}</objectFactory>
+  <parallel>${parallel}</parallel>
+  <parallelMavenExecution default-value="${session.parallel}"/>
+  <perCoreThreadCount default-value="true">${perCoreThreadCount}</perCoreThreadCount>
+  <pluginArtifactMap>${plugin.artifactMap}</pluginArtifactMap>
+  <pluginDescriptor default-value="${plugin}"/>
+  <printSummary default-value="true">${surefire.printSummary}</printSummary>
+  <projectArtifactMap>${project.artifactMap}</projectArtifactMap>
+  <redirectTestOutputToFile default-value="false">${maven.test.redirectTestOutputToFile}</redirectTestOutputToFile>
+  <remoteRepositories default-value="${project.pluginArtifactRepositories}"/>
+  <reportFormat default-value="brief">${surefire.reportFormat}</reportFormat>
+  <reportNameSuffix default-value="">${surefire.reportNameSuffix}</reportNameSuffix>
+  <reportsDirectory default-value="${project.build.directory}/surefire-reports"/>
+  <runOrder default-value="filesystem"/>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <skipExec>${maven.test.skip.exec}</skipExec>
+  <skipTests default-value="false">${skipTests}</skipTests>
+  <test>${test}</test>
+  <testClassesDirectory default-value="${project.build.testOutputDirectory}"/>
+  <testFailureIgnore default-value="false">${maven.test.failure.ignore}</testFailureIgnore>
+  <testNGArtifactName default-value="org.testng:testng">${testNGArtifactName}</testNGArtifactName>
+  <testSourceDirectory default-value="${project.build.testSourceDirectory}"/>
+  <threadCount>${threadCount}</threadCount>
+  <trimStackTrace default-value="true">${trimStackTrace}</trimStackTrace>
+  <useFile default-value="true">${surefire.useFile}</useFile>
+  <useManifestOnlyJar default-value="true">${surefire.useManifestOnlyJar}</useManifestOnlyJar>
+  <useSystemClassLoader default-value="true">${surefire.useSystemClassLoader}</useSystemClassLoader>
+  <useUnlimitedThreads default-value="false">${useUnlimitedThreads}</useUnlimitedThreads>
+  <workingDirectory>${basedir}</workingDirectory>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-surefire-report-plugin:2.19.1:report-only (default)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <aggregate default-value="false">${aggregate}</aggregate>
+  <alwaysGenerateSurefireReport default-value="true">${alwaysGenerateSurefireReport}</alwaysGenerateSurefireReport>
+  <inputEncoding default-value="${project.build.sourceEncoding}">${encoding}</inputEncoding>
+  <linkXRef default-value="true">${linkXRef}</linkXRef>
+  <outputDirectory default-value="${project.reporting.outputDirectory}"/>
+  <outputEncoding default-value="${project.reporting.outputEncoding}">${outputEncoding}</outputEncoding>
+  <outputName default-value="surefire-report">${outputName}</outputName>
+  <project default-value="${project}"/>
+  <reactorProjects default-value="${reactorProjects}"/>
+  <showSuccess default-value="true">${showSuccess}</showSuccess>
+  <skipSurefireReport default-value="false">${skipSurefireReport}</skipSurefireReport>
+  <xrefLocation default-value="${project.reporting.outputDirectory}/xref-test"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-war-plugin:2.6:war (default-war)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <archiveClasses default-value="false">${archiveClasses}</archiveClasses>
+  <attachClasses default-value="false"/>
+  <cacheFile default-value="${project.build.directory}/war/work/webapp-cache.xml"/>
+  <classesClassifier default-value="classes"/>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <containerConfigXML>${maven.war.containerConfigXML}</containerConfigXML>
+  <escapeString>${maven.war.escapeString}</escapeString>
+  <escapedBackslashesInFilePath default-value="false">${maven.war.escapedBackslashesInFilePath}</escapedBackslashesInFilePath>
+  <failOnMissingWebXml default-value="true">false</failOnMissingWebXml>
+  <filteringDeploymentDescriptors default-value="false">${maven.war.filteringDeploymentDescriptors}</filteringDeploymentDescriptors>
+  <includeEmptyDirectories default-value="false"/>
+  <outputDirectory default-value="${project.build.directory}"/>
+  <primaryArtifact default-value="true">${primaryArtifact}</primaryArtifact>
+  <project default-value="${project}"/>
+  <recompressZippedFiles default-value="true"/>
+  <resourceEncoding default-value="${project.build.sourceEncoding}">${resourceEncoding}</resourceEncoding>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.war.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useCache default-value="false">${useCache}</useCache>
+  <useJvmChmod default-value="true">${maven.war.useJvmChmod}</useJvmChmod>
+  <warName default-value="${project.build.finalName}">${war.warName}</warName>
+  <warSourceDirectory default-value="${basedir}/src/main/webapp"/>
+  <warSourceIncludes default-value="**"/>
+  <webXml>${maven.war.webxml}</webXml>
+  <webappDirectory default-value="${project.build.directory}/${project.build.finalName}"/>
+  <workDirectory default-value="${project.build.directory}/war/work"/>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=704090, ConflictMarker.markTime=419216, ConflictMarker.nodeCount=123, ConflictIdSorter.graphTime=590570, ConflictIdSorter.topsortTime=273979, ConflictIdSorter.conflictIdCount=70, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=5282567, ConflictResolver.conflictItemCount=122, DefaultDependencyCollector.collectTime=186091094, DefaultDependencyCollector.transformTime=8771539}
+[DEBUG] br.com.caelum.argentum:argentum-web:war:1.0.0-SNAPSHOT
+[DEBUG]    com.sun.faces:jsf-api:jar:2.2.6:compile
+[DEBUG]    com.sun.faces:jsf-impl:jar:2.2.6:compile
+[DEBUG]    org.primefaces:primefaces:jar:5.3:compile
+[DEBUG]    javax.servlet:javax.servlet-api:jar:3.0.1:provided
+[DEBUG]    com.thoughtworks.xstream:xstream:jar:1.2.2:compile
+[DEBUG]       xpp3:xpp3_min:jar:1.1.3.4.O:compile
+[DEBUG]    junit:junit:jar:4.9:test
+[DEBUG]       org.hamcrest:hamcrest-core:jar:1.1:test
+[DEBUG]    org.mockito:mockito-all:jar:1.10.19:test
+[DEBUG]    org.seleniumhq.selenium:selenium-java:jar:2.41.0:test
+[DEBUG]       org.seleniumhq.selenium:selenium-chrome-driver:jar:2.41.0:test
+[DEBUG]       org.seleniumhq.selenium:selenium-htmlunit-driver:jar:2.41.0:test
+[DEBUG]          net.sourceforge.htmlunit:htmlunit:jar:2.13:test
+[DEBUG]             xalan:xalan:jar:2.7.1:test
+[DEBUG]                xalan:serializer:jar:2.7.1:test
+[DEBUG]             commons-collections:commons-collections:jar:3.2.1:test
+[DEBUG]             org.apache.commons:commons-lang3:jar:3.1:test
+[DEBUG]             org.apache.httpcomponents:httpmime:jar:4.3.1:test
+[DEBUG]             commons-codec:commons-codec:jar:1.8:test
+[DEBUG]             net.sourceforge.htmlunit:htmlunit-core-js:jar:2.13:test
+[DEBUG]             xerces:xercesImpl:jar:2.11.0:test
+[DEBUG]                xml-apis:xml-apis:jar:1.4.01:test
+[DEBUG]             net.sourceforge.nekohtml:nekohtml:jar:1.9.19:test
+[DEBUG]             net.sourceforge.cssparser:cssparser:jar:0.9.11:test
+[DEBUG]                org.w3c.css:sac:jar:1.3:test
+[DEBUG]             commons-logging:commons-logging:jar:1.1.3:test
+[DEBUG]             org.eclipse.jetty:jetty-websocket:jar:8.1.12.v20130726:test
+[DEBUG]                org.eclipse.jetty:jetty-util:jar:8.1.12.v20130726:test
+[DEBUG]                org.eclipse.jetty:jetty-io:jar:8.1.12.v20130726:test
+[DEBUG]                org.eclipse.jetty:jetty-http:jar:8.1.12.v20130726:test
+[DEBUG]          org.apache.httpcomponents:httpclient:jar:4.3.1:test
+[DEBUG]             org.apache.httpcomponents:httpcore:jar:4.3:test
+[DEBUG]       org.seleniumhq.selenium:selenium-firefox-driver:jar:2.41.0:test
+[DEBUG]          commons-io:commons-io:jar:2.2:test
+[DEBUG]          org.apache.commons:commons-exec:jar:1.1:test
+[DEBUG]       org.seleniumhq.selenium:selenium-ie-driver:jar:2.41.0:test
+[DEBUG]          net.java.dev.jna:jna:jar:3.4.0:test
+[DEBUG]          net.java.dev.jna:platform:jar:3.4.0:test
+[DEBUG]       org.seleniumhq.selenium:selenium-safari-driver:jar:2.41.0:test
+[DEBUG]       org.seleniumhq.selenium:selenium-support:jar:2.41.0:test
+[DEBUG]          org.seleniumhq.selenium:selenium-api:jar:2.41.0:test
+[DEBUG]       org.webbitserver:webbit:jar:0.4.14:test
+[DEBUG]          io.netty:netty:jar:3.5.2.Final:test
+[DEBUG]    com.github.detro:phantomjsdriver:jar:1.2.0:test
+[DEBUG]       org.seleniumhq.selenium:selenium-remote-driver:jar:2.41.0:test
+[DEBUG]          cglib:cglib-nodep:jar:2.1_3:test
+[DEBUG]          org.json:json:jar:20080701:test
+[DEBUG]          com.google.guava:guava:jar:15.0:test
+[DEBUG]    org.jboss.arquillian.junit:arquillian-junit-container:jar:1.0.3.Final:test
+[DEBUG]       org.jboss.arquillian.junit:arquillian-junit-core:jar:1.0.3.Final:test
+[DEBUG]       org.jboss.arquillian.test:arquillian-test-api:jar:1.0.3.Final:test
+[DEBUG]          org.jboss.arquillian.core:arquillian-core-api:jar:1.0.3.Final:test
+[DEBUG]       org.jboss.arquillian.test:arquillian-test-spi:jar:1.0.3.Final:test
+[DEBUG]          org.jboss.arquillian.core:arquillian-core-spi:jar:1.0.3.Final:test
+[DEBUG]       org.jboss.arquillian.container:arquillian-container-test-api:jar:1.0.3.Final:test
+[DEBUG]       org.jboss.arquillian.container:arquillian-container-test-spi:jar:1.0.3.Final:test
+[DEBUG]          org.jboss.arquillian.container:arquillian-container-spi:jar:1.0.3.Final:test
+[DEBUG]             org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-api-base:jar:2.0.0-alpha-3:test
+[DEBUG]       org.jboss.arquillian.core:arquillian-core-impl-base:jar:1.0.3.Final:test
+[DEBUG]       org.jboss.arquillian.test:arquillian-test-impl-base:jar:1.0.3.Final:test
+[DEBUG]       org.jboss.arquillian.container:arquillian-container-impl-base:jar:1.0.3.Final:test
+[DEBUG]          org.jboss.arquillian.config:arquillian-config-api:jar:1.0.3.Final:test
+[DEBUG]          org.jboss.arquillian.config:arquillian-config-impl-base:jar:1.0.3.Final:test
+[DEBUG]          org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-spi:jar:2.0.0-alpha-3:test
+[DEBUG]       org.jboss.arquillian.container:arquillian-container-test-impl-base:jar:1.0.3.Final:test
+[DEBUG]       org.jboss.shrinkwrap:shrinkwrap-impl-base:jar:1.0.1:test
+[DEBUG]          org.jboss.shrinkwrap:shrinkwrap-spi:jar:1.0.1:test
+[DEBUG]    org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api-maven:jar:1.0.0-beta-6:test
+[DEBUG]       org.jboss.shrinkwrap:shrinkwrap-api:jar:1.0.0-cr-1:test
+[DEBUG]       org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api:jar:1.0.0-beta-6:test
+[INFO] 
+[8mha:////4MEawC/u6INT+OtSbmkvB7R4kKyH8VyfcLvGi7Dv/4wwAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- jacoco-maven-plugin:0.7.6.201602180812:prepare-agent (default) @ argentum-web ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=418192, ConflictMarker.markTime=148904, ConflictMarker.nodeCount=158, ConflictIdSorter.graphTime=126324, ConflictIdSorter.topsortTime=29376, ConflictIdSorter.conflictIdCount=47, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1071092, ConflictResolver.conflictItemCount=108, DefaultDependencyCollector.collectTime=176323866, DefaultDependencyCollector.transformTime=1859864}
+[DEBUG] org.jacoco:jacoco-maven-plugin:jar:0.7.6.201602180812:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.2.1:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.2.1:compile
+[DEBUG]          org.apache.maven:maven-repository-metadata:jar:2.2.1:compile
+[DEBUG]          backport-util-concurrent:backport-util-concurrent:jar:3.1:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.2.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.11:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:2.2.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:4.8.2:compile
+[DEBUG]          classworlds:classworlds:jar:1.1-alpha-2:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:1.5.6:compile
+[DEBUG]    org.apache.maven.shared:file-management:jar:1.2.1:compile
+[DEBUG]       org.apache.maven.shared:maven-shared-io:jar:1.1:compile
+[DEBUG]          org.apache.maven.wagon:wagon-provider-api:jar:1.0-alpha-6:compile
+[DEBUG]    org.apache.maven.reporting:maven-reporting-api:jar:2.2.1:compile
+[DEBUG]       org.apache.maven.doxia:doxia-sink-api:jar:1.1:compile
+[DEBUG]       org.apache.maven.doxia:doxia-logging-api:jar:1.1:compile
+[DEBUG]    org.apache.maven.reporting:maven-reporting-impl:jar:2.1:compile
+[DEBUG]       org.apache.maven.doxia:doxia-core:jar:1.1.2:compile
+[DEBUG]          xerces:xercesImpl:jar:2.8.1:compile
+[DEBUG]          commons-lang:commons-lang:jar:2.4:compile
+[DEBUG]          commons-httpclient:commons-httpclient:jar:3.1:compile
+[DEBUG]             commons-codec:commons-codec:jar:1.2:compile
+[DEBUG]       org.apache.maven.doxia:doxia-site-renderer:jar:1.1.2:compile
+[DEBUG]          org.apache.maven.doxia:doxia-decoration-model:jar:1.1.2:compile
+[DEBUG]          org.apache.maven.doxia:doxia-module-xhtml:jar:1.1.2:compile
+[DEBUG]          org.apache.maven.doxia:doxia-module-fml:jar:1.1.2:compile
+[DEBUG]          org.codehaus.plexus:plexus-i18n:jar:1.0-beta-7:compile
+[DEBUG]          org.codehaus.plexus:plexus-velocity:jar:1.1.7:compile
+[DEBUG]          org.apache.velocity:velocity:jar:1.5:compile
+[DEBUG]          commons-collections:commons-collections:jar:3.2:compile
+[DEBUG]       commons-validator:commons-validator:jar:1.2.0:compile
+[DEBUG]          commons-beanutils:commons-beanutils:jar:1.7.0:compile
+[DEBUG]          commons-digester:commons-digester:jar:1.6:compile
+[DEBUG]          commons-logging:commons-logging:jar:1.0.4:compile
+[DEBUG]          oro:oro:jar:2.0.8:compile
+[DEBUG]          xml-apis:xml-apis:jar:1.0.b2:compile
+[DEBUG]    org.jacoco:org.jacoco.agent:jar:runtime:0.7.6.201602180812:compile
+[DEBUG]    org.jacoco:org.jacoco.core:jar:0.7.6.201602180812:compile
+[DEBUG]       org.ow2.asm:asm-debug-all:jar:5.0.4:compile
+[DEBUG]    org.jacoco:org.jacoco.report:jar:0.7.6.201602180812:compile
+[DEBUG] Created new class realm plugin>org.jacoco:jacoco-maven-plugin:0.7.6.201602180812
+[DEBUG] Importing foreign packages into class realm plugin>org.jacoco:jacoco-maven-plugin:0.7.6.201602180812
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.jacoco:jacoco-maven-plugin:0.7.6.201602180812
+[DEBUG]   Included: org.jacoco:jacoco-maven-plugin:jar:0.7.6.201602180812
+[DEBUG]   Included: backport-util-concurrent:backport-util-concurrent:jar:3.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.11
+[DEBUG]   Included: junit:junit:jar:4.8.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.5.6
+[DEBUG]   Included: org.apache.maven.shared:file-management:jar:1.2.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-io:jar:1.1
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.2.1
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.1
+[DEBUG]   Included: org.apache.maven.doxia:doxia-logging-api:jar:1.1
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-impl:jar:2.1
+[DEBUG]   Included: org.apache.maven.doxia:doxia-core:jar:1.1.2
+[DEBUG]   Included: xerces:xercesImpl:jar:2.8.1
+[DEBUG]   Included: commons-lang:commons-lang:jar:2.4
+[DEBUG]   Included: commons-httpclient:commons-httpclient:jar:3.1
+[DEBUG]   Included: commons-codec:commons-codec:jar:1.2
+[DEBUG]   Included: org.apache.maven.doxia:doxia-site-renderer:jar:1.1.2
+[DEBUG]   Included: org.apache.maven.doxia:doxia-decoration-model:jar:1.1.2
+[DEBUG]   Included: org.apache.maven.doxia:doxia-module-xhtml:jar:1.1.2
+[DEBUG]   Included: org.apache.maven.doxia:doxia-module-fml:jar:1.1.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-i18n:jar:1.0-beta-7
+[DEBUG]   Included: org.codehaus.plexus:plexus-velocity:jar:1.1.7
+[DEBUG]   Included: org.apache.velocity:velocity:jar:1.5
+[DEBUG]   Included: commons-collections:commons-collections:jar:3.2
+[DEBUG]   Included: commons-validator:commons-validator:jar:1.2.0
+[DEBUG]   Included: commons-beanutils:commons-beanutils:jar:1.7.0
+[DEBUG]   Included: commons-digester:commons-digester:jar:1.6
+[DEBUG]   Included: commons-logging:commons-logging:jar:1.0.4
+[DEBUG]   Included: oro:oro:jar:2.0.8
+[DEBUG]   Included: xml-apis:xml-apis:jar:1.0.b2
+[DEBUG]   Included: org.jacoco:org.jacoco.agent:jar:runtime:0.7.6.201602180812
+[DEBUG]   Included: org.jacoco:org.jacoco.core:jar:0.7.6.201602180812
+[DEBUG]   Included: org.ow2.asm:asm-debug-all:jar:5.0.4
+[DEBUG]   Included: org.jacoco:org.jacoco.report:jar:0.7.6.201602180812
+[DEBUG] Configuring mojo org.jacoco:jacoco-maven-plugin:0.7.6.201602180812:prepare-agent from plugin realm ClassRealm[plugin>org.jacoco:jacoco-maven-plugin:0.7.6.201602180812, parent: sun.misc.Launcher$AppClassLoader@74a14482]
+[DEBUG] Configuring mojo 'org.jacoco:jacoco-maven-plugin:0.7.6.201602180812:prepare-agent' with basic configurator -->
+[DEBUG]   (f) destFile = /var/jenkins_home/workspace/teste2/target/jacoco.exec
+[DEBUG]   (f) pluginArtifactMap = {org.jacoco:jacoco-maven-plugin=org.jacoco:jacoco-maven-plugin:maven-plugin:0.7.6.201602180812:, org.apache.maven:maven-plugin-api=org.apache.maven:maven-plugin-api:jar:2.2.1:compile, org.apache.maven:maven-project=org.apache.maven:maven-project:jar:2.2.1:compile, org.apache.maven:maven-settings=org.apache.maven:maven-settings:jar:2.2.1:compile, org.apache.maven:maven-profile=org.apache.maven:maven-profile:jar:2.2.1:compile, org.apache.maven:maven-model=org.apache.maven:maven-model:jar:2.2.1:compile, org.apache.maven:maven-artifact-manager=org.apache.maven:maven-artifact-manager:jar:2.2.1:compile, org.apache.maven:maven-repository-metadata=org.apache.maven:maven-repository-metadata:jar:2.2.1:compile, backport-util-concurrent:backport-util-concurrent=backport-util-concurrent:backport-util-concurrent:jar:3.1:compile, org.apache.maven:maven-plugin-registry=org.apache.maven:maven-plugin-registry:jar:2.2.1:compile, org.codehaus.plexus:plexus-interpolation=org.codehaus.plexus:plexus-interpolation:jar:1.11:compile, org.apache.maven:maven-artifact=org.apache.maven:maven-artifact:jar:2.2.1:compile, org.codehaus.plexus:plexus-container-default=org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile, junit:junit=junit:junit:jar:4.8.2:compile, classworlds:classworlds=classworlds:classworlds:jar:1.1-alpha-2:compile, org.codehaus.plexus:plexus-utils=org.codehaus.plexus:plexus-utils:jar:1.5.6:compile, org.apache.maven.shared:file-management=org.apache.maven.shared:file-management:jar:1.2.1:compile, org.apache.maven.shared:maven-shared-io=org.apache.maven.shared:maven-shared-io:jar:1.1:compile, org.apache.maven.wagon:wagon-provider-api=org.apache.maven.wagon:wagon-provider-api:jar:1.0-alpha-6:compile, org.apache.maven.reporting:maven-reporting-api=org.apache.maven.reporting:maven-reporting-api:jar:2.2.1:compile, org.apache.maven.doxia:doxia-sink-api=org.apache.maven.doxia:doxia-sink-api:jar:1.1:compile, org.apache.maven.doxia:doxia-logging-api=org.apache.maven.doxia:doxia-logging-api:jar:1.1:compile, org.apache.maven.reporting:maven-reporting-impl=org.apache.maven.reporting:maven-reporting-impl:jar:2.1:compile, org.apache.maven.doxia:doxia-core=org.apache.maven.doxia:doxia-core:jar:1.1.2:compile, xerces:xercesImpl=xerces:xercesImpl:jar:2.8.1:compile, commons-lang:commons-lang=commons-lang:commons-lang:jar:2.4:compile, commons-httpclient:commons-httpclient=commons-httpclient:commons-httpclient:jar:3.1:compile, commons-codec:commons-codec=commons-codec:commons-codec:jar:1.2:compile, org.apache.maven.doxia:doxia-site-renderer=org.apache.maven.doxia:doxia-site-renderer:jar:1.1.2:compile, org.apache.maven.doxia:doxia-decoration-model=org.apache.maven.doxia:doxia-decoration-model:jar:1.1.2:compile, org.apache.maven.doxia:doxia-module-xhtml=org.apache.maven.doxia:doxia-module-xhtml:jar:1.1.2:compile, org.apache.maven.doxia:doxia-module-fml=org.apache.maven.doxia:doxia-module-fml:jar:1.1.2:compile, org.codehaus.plexus:plexus-i18n=org.codehaus.plexus:plexus-i18n:jar:1.0-beta-7:compile, org.codehaus.plexus:plexus-velocity=org.codehaus.plexus:plexus-velocity:jar:1.1.7:compile, org.apache.velocity:velocity=org.apache.velocity:velocity:jar:1.5:compile, commons-collections:commons-collections=commons-collections:commons-collections:jar:3.2:compile, commons-validator:commons-validator=commons-validator:commons-validator:jar:1.2.0:compile, commons-beanutils:commons-beanutils=commons-beanutils:commons-beanutils:jar:1.7.0:compile, commons-digester:commons-digester=commons-digester:commons-digester:jar:1.6:compile, commons-logging:commons-logging=commons-logging:commons-logging:jar:1.0.4:compile, oro:oro=oro:oro:jar:2.0.8:compile, xml-apis:xml-apis=xml-apis:xml-apis:jar:1.0.b2:compile, org.jacoco:org.jacoco.agent=org.jacoco:org.jacoco.agent:jar:runtime:0.7.6.201602180812:compile, org.jacoco:org.jacoco.core=org.jacoco:org.jacoco.core:jar:0.7.6.201602180812:compile, org.ow2.asm:asm-debug-all=org.ow2.asm:asm-debug-all:jar:5.0.4:compile, org.jacoco:org.jacoco.report=org.jacoco:org.jacoco.report:jar:0.7.6.201602180812:compile}
+[DEBUG]   (f) project = MavenProject: br.com.caelum.argentum:argentum-web:1.0.0-SNAPSHOT @ /var/jenkins_home/workspace/teste2/pom.xml
+[DEBUG]   (f) skip = false
+[DEBUG] -- end configuration --
+[INFO] argLine set to -javaagent:/var/jenkins_home/.m2/repository/org/jacoco/org.jacoco.agent/0.7.6.201602180812/org.jacoco.agent-0.7.6.201602180812-runtime.jar=destfile=/var/jenkins_home/workspace/teste2/target/jacoco.exec
+[INFO] 
+[8mha:////4MEawC/u6INT+OtSbmkvB7R4kKyH8VyfcLvGi7Dv/4wwAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ argentum-web ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=155883, ConflictMarker.markTime=63469, ConflictMarker.nodeCount=77, ConflictIdSorter.graphTime=92625, ConflictIdSorter.topsortTime=21355, ConflictIdSorter.conflictIdCount=26, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=498795, ConflictResolver.conflictItemCount=74, DefaultDependencyCollector.collectTime=27765801, DefaultDependencyCollector.transformTime=848814}
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:2.6:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[DEBUG]          org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]       junit:junit:jar:3.8.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:1.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.13:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:2.6
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:1.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.13
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: sun.misc.Launcher$AppClassLoader@74a14482]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:resources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /var/jenkins_home/workspace/teste2/target/classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: br.com.caelum.argentum:argentum-web:1.0.0-SNAPSHOT @ /var/jenkins_home/workspace/teste2/pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /var/jenkins_home/workspace/teste2/src/main/resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@4a1c0752
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Oracle Corporation, env.RUN_DISPLAY_URL=http://127.0.0.1:8080/job/teste2/3/display/redirect, env.JENKINS_SERVER_COOKIE=3d161a2db0ef9d30, sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.name=Linux, sun.boot.class.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes, env.JOB_DISPLAY_URL=http://127.0.0.1:8080/job/teste2/display/redirect, env.PWD=/var/jenkins_home/workspace/teste2, env.LANG=C.UTF-8, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_181-8u181-b13-2~deb9u1-b13, env.BUILD_DISPLAY_NAME=#3, project.build.sourceEncoding=UTF-8, user.name=jenkins, maven.build.version=Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T18:41:47Z), env.JENKINS_INCREMENTALS_REPO_MIRROR=https://repo.jenkins-ci.org/incrementals, env.JENKINS_UC=https://updates.jenkins.io, env.PATH=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Apache_Maven_3.6.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin, user.language=en, sun.boot.library.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64, classworlds.conf=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Apache_Maven_3.6.0/bin/m2.conf, java.version=1.8.0_181, user.timezone=, env.NODE_NAME=master, sun.arch.data.model=64, java.endorsed.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed, sun.cpu.isalist=, env.JOB_BASE_NAME=teste2, sun.jnu.encoding=UTF-8, file.encoding.pkg=sun.io, env.SHLVL=0, file.separator=/, env.HOSTNAME=5828d768909a, java.specification.name=Java Platform API Specification, maven.conf=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Apache_Maven_3.6.0/conf, java.class.version=52.0, env.JENKINS_VERSION=2.150.3, argLine=-javaagent:/var/jenkins_home/.m2/repository/org/jacoco/org.jacoco.agent/0.7.6.201602180812/org.jacoco.agent-0.7.6.201602180812-runtime.jar=destfile=/var/jenkins_home/workspace/teste2/target/jacoco.exec, env.BUILD_NUMBER=3, java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre, java.vm.info=mixed mode, os.version=4.20.13-200.fc29.x86_64, env.HUDSON_COOKIE=07bd78bd-947e-41e4-af4c-ce08d201f73b, maven.compiler.target=1.8, project.reporting.outputEncoding=UTF-8, env.JAVA_OPTS=-Djava.awt.headless=true, path.separator=:, java.vm.version=25.181-b13, arquillian.tomcat.version=1.0.0.CR4, env.RUN_CHANGES_DISPLAY_URL=http://127.0.0.1:8080/job/teste2/3/display/redirect?page=changes, env.JOB_NAME=teste2, env.JAVA_HOME=/docker-java-home, java.awt.printerjob=sun.print.PSPrinterJob, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.X11.XToolkit, env.HUDSON_URL=http://127.0.0.1:8080/, env.BUILD_TAG=jenkins-teste2-3, user.home=/var/jenkins_home, env.JENKINS_HOME=/var/jenkins_home, env.JOB_URL=http://127.0.0.1:8080/job/teste2/, env.OLDPWD=/var/jenkins_home/workspace/teste2, java.specification.vendor=Oracle Corporation, env.M2_HOME=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Apache_Maven_3.6.0, env.JAVA_DEBIAN_VERSION=8u181-b13-2~deb9u1, library.jansi.path=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Apache_Maven_3.6.0/lib/jansi-native, java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, java.vendor.url=http://java.oracle.com/, env.MAVEN_CMD_LINE_ARGS= package -X, env.HUDSON_HOME=/var/jenkins_home, env.HUDSON_SERVER_COOKIE=3d161a2db0ef9d30, java.vm.vendor=Oracle Corporation, env.COPY_REFERENCE_FILE_LOG=/var/jenkins_home/copy_reference_file.log, maven.home=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Apache_Maven_3.6.0, java.runtime.name=OpenJDK Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher package -X, java.class.path=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Apache_Maven_3.6.0/boot/plexus-classworlds-2.5.2.jar, env.EXECUTOR_NUMBER=1, env.MAVEN_TERMINATE_CMD=on, maven.version=3.6.0, env.JENKINS_HOST_HOME=/data/jenkins, env.JENKINS_SLAVE_AGENT_PORT=50000, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.8, sun.cpu.endian=little, sun.os.patch.level=unknown, env.HOME=/var/jenkins_home, env.BUILD_URL=http://127.0.0.1:8080/job/teste2/3/, java.io.tmpdir=/tmp, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, env.JAVA_VERSION=8u181, maven.multiModuleProjectDirectory=/var/jenkins_home/workspace/teste2, maven.compiler.source=1.8, env.JENKINS_UC_EXPERIMENTAL=https://updates.jenkins.io/experimental, os.arch=amd64, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.ext.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext, env.MAVEN_HOME=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Apache_Maven_3.6.0, user.dir=/var/jenkins_home/workspace/teste2, env.BUILD_ID=3, env.GIT_BRANCH=origin/master, line.separator=
+, env.JENKINS_URL=http://127.0.0.1:8080/, java.vm.name=OpenJDK 64-Bit Server VM, env.GIT_URL=https://github.com/henriquewestphal/argentum-web.git, env.GIT_COMMIT=56b8432c7a4dfc708de0969be3d354f15e3607cf, file.encoding=UTF-8, env.WORKSPACE=/var/jenkins_home/workspace/teste2, tomcat.version=7.0.64, arquillian.version=1.0.3.Final, java.specification.version=1.8, env.GIT_PREVIOUS_COMMIT=56b8432c7a4dfc708de0969be3d354f15e3607cf, env.NODE_LABELS=master, env.MAVEN_PROJECTBASEDIR=/var/jenkins_home/workspace/teste2}
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] resource with targetPath null
+directory /var/jenkins_home/workspace/teste2/src/main/resources
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 1 resource
+[DEBUG] file application.properties has a filtered file extension
+[DEBUG] copy /var/jenkins_home/workspace/teste2/src/main/resources/application.properties to /var/jenkins_home/workspace/teste2/target/classes/application.properties
+[DEBUG] no use filter components
+[INFO] 
+[8mha:////4MEawC/u6INT+OtSbmkvB7R4kKyH8VyfcLvGi7Dv/4wwAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ argentum-web ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=138402, ConflictMarker.markTime=144983, ConflictMarker.nodeCount=160, ConflictIdSorter.graphTime=107627, ConflictIdSorter.topsortTime=27363, ConflictIdSorter.conflictIdCount=43, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=632434, ConflictResolver.conflictItemCount=63, DefaultDependencyCollector.collectTime=65147606, DefaultDependencyCollector.transformTime=1063728}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.1:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.9:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:1.5.1:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-project:jar:2.0.9:compile
+[DEBUG]          org.apache.maven:maven-plugin-registry:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:1.0:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:0.1:compile
+[DEBUG]       com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.2:runtime
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.5.5:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.2:compile
+[DEBUG]       org.apache.xbean:xbean-reflect:jar:3.4:compile
+[DEBUG]          log4j:log4j:jar:1.2.12:compile
+[DEBUG]          commons-logging:commons-logging-api:jar:1.1:compile
+[DEBUG]       com.google.collections:google-collections:jar:1.0:compile
+[DEBUG]       junit:junit:jar:3.8.2:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.5.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:0.1
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.2
+[DEBUG]   Included: org.apache.xbean:xbean-reflect:jar:3.4
+[DEBUG]   Included: log4j:log4j:jar:1.2.12
+[DEBUG]   Included: commons-logging:commons-logging-api:jar:1.1
+[DEBUG]   Included: com.google.collections:google-collections:jar:1.0
+[DEBUG]   Included: junit:junit:jar:3.8.2
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.1:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1, parent: sun.misc.Launcher$AppClassLoader@74a14482]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.1:compile' with basic configurator -->
+[DEBUG]   (f) basedir = /var/jenkins_home/workspace/teste2
+[DEBUG]   (f) buildDirectory = /var/jenkins_home/workspace/teste2/target
+[DEBUG]   (f) classpathElements = [/var/jenkins_home/workspace/teste2/target/classes, /var/jenkins_home/.m2/repository/com/sun/faces/jsf-api/2.2.6/jsf-api-2.2.6.jar, /var/jenkins_home/.m2/repository/com/sun/faces/jsf-impl/2.2.6/jsf-impl-2.2.6.jar, /var/jenkins_home/.m2/repository/org/primefaces/primefaces/5.3/primefaces-5.3.jar, /var/jenkins_home/.m2/repository/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar, /var/jenkins_home/.m2/repository/com/thoughtworks/xstream/xstream/1.2.2/xstream-1.2.2.jar, /var/jenkins_home/.m2/repository/xpp3/xpp3_min/1.1.3.4.O/xpp3_min-1.1.3.4.O.jar]
+[DEBUG]   (f) compileSourceRoots = [/var/jenkins_home/workspace/teste2/src/main/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = /var/jenkins_home/workspace/teste2/target/generated-sources/annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.1:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /var/jenkins_home/workspace/teste2/target/classes
+[DEBUG]   (f) projectArtifact = br.com.caelum.argentum:argentum-web:war:1.0.0-SNAPSHOT
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.8
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.8
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG]   (f) mavenSession = org.apache.maven.execution.MavenSession@4a1c0752
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@4a1c0752
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Source directories: [/var/jenkins_home/workspace/teste2/src/main/java]
+[DEBUG] Classpath: [/var/jenkins_home/workspace/teste2/target/classes
+ /var/jenkins_home/.m2/repository/com/sun/faces/jsf-api/2.2.6/jsf-api-2.2.6.jar
+ /var/jenkins_home/.m2/repository/com/sun/faces/jsf-impl/2.2.6/jsf-impl-2.2.6.jar
+ /var/jenkins_home/.m2/repository/org/primefaces/primefaces/5.3/primefaces-5.3.jar
+ /var/jenkins_home/.m2/repository/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar
+ /var/jenkins_home/.m2/repository/com/thoughtworks/xstream/xstream/1.2.2/xstream-1.2.2.jar
+ /var/jenkins_home/.m2/repository/xpp3/xpp3_min/1.1.3.4.O/xpp3_min-1.1.3.4.O.jar]
+[DEBUG] Output directory: /var/jenkins_home/workspace/teste2/target/classes
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[8mha:////4MEawC/u6INT+OtSbmkvB7R4kKyH8VyfcLvGi7Dv/4wwAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ argentum-web ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:testResources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: sun.misc.Launcher$AppClassLoader@74a14482]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:testResources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /var/jenkins_home/workspace/teste2/target/test-classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: br.com.caelum.argentum:argentum-web:1.0.0-SNAPSHOT @ /var/jenkins_home/workspace/teste2/pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /var/jenkins_home/workspace/teste2/src/test/resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@4a1c0752
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Oracle Corporation, env.RUN_DISPLAY_URL=http://127.0.0.1:8080/job/teste2/3/display/redirect, env.JENKINS_SERVER_COOKIE=3d161a2db0ef9d30, sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.name=Linux, sun.boot.class.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes, env.JOB_DISPLAY_URL=http://127.0.0.1:8080/job/teste2/display/redirect, env.PWD=/var/jenkins_home/workspace/teste2, env.LANG=C.UTF-8, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_181-8u181-b13-2~deb9u1-b13, env.BUILD_DISPLAY_NAME=#3, project.build.sourceEncoding=UTF-8, user.name=jenkins, maven.build.version=Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T18:41:47Z), env.JENKINS_INCREMENTALS_REPO_MIRROR=https://repo.jenkins-ci.org/incrementals, env.JENKINS_UC=https://updates.jenkins.io, env.PATH=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Apache_Maven_3.6.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin, user.language=en, sun.boot.library.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64, classworlds.conf=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Apache_Maven_3.6.0/bin/m2.conf, java.version=1.8.0_181, user.timezone=, env.NODE_NAME=master, sun.arch.data.model=64, java.endorsed.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed, sun.cpu.isalist=, env.JOB_BASE_NAME=teste2, sun.jnu.encoding=UTF-8, file.encoding.pkg=sun.io, env.SHLVL=0, file.separator=/, env.HOSTNAME=5828d768909a, java.specification.name=Java Platform API Specification, maven.conf=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Apache_Maven_3.6.0/conf, java.class.version=52.0, env.JENKINS_VERSION=2.150.3, argLine=-javaagent:/var/jenkins_home/.m2/repository/org/jacoco/org.jacoco.agent/0.7.6.201602180812/org.jacoco.agent-0.7.6.201602180812-runtime.jar=destfile=/var/jenkins_home/workspace/teste2/target/jacoco.exec, env.BUILD_NUMBER=3, java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre, java.vm.info=mixed mode, os.version=4.20.13-200.fc29.x86_64, env.HUDSON_COOKIE=07bd78bd-947e-41e4-af4c-ce08d201f73b, maven.compiler.target=1.8, project.reporting.outputEncoding=UTF-8, env.JAVA_OPTS=-Djava.awt.headless=true, path.separator=:, java.vm.version=25.181-b13, arquillian.tomcat.version=1.0.0.CR4, env.RUN_CHANGES_DISPLAY_URL=http://127.0.0.1:8080/job/teste2/3/display/redirect?page=changes, env.JOB_NAME=teste2, env.JAVA_HOME=/docker-java-home, java.awt.printerjob=sun.print.PSPrinterJob, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.X11.XToolkit, env.HUDSON_URL=http://127.0.0.1:8080/, env.BUILD_TAG=jenkins-teste2-3, user.home=/var/jenkins_home, env.JENKINS_HOME=/var/jenkins_home, env.JOB_URL=http://127.0.0.1:8080/job/teste2/, env.OLDPWD=/var/jenkins_home/workspace/teste2, java.specification.vendor=Oracle Corporation, env.M2_HOME=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Apache_Maven_3.6.0, env.JAVA_DEBIAN_VERSION=8u181-b13-2~deb9u1, library.jansi.path=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Apache_Maven_3.6.0/lib/jansi-native, java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, java.vendor.url=http://java.oracle.com/, env.MAVEN_CMD_LINE_ARGS= package -X, env.HUDSON_HOME=/var/jenkins_home, env.HUDSON_SERVER_COOKIE=3d161a2db0ef9d30, java.vm.vendor=Oracle Corporation, env.COPY_REFERENCE_FILE_LOG=/var/jenkins_home/copy_reference_file.log, maven.home=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Apache_Maven_3.6.0, java.runtime.name=OpenJDK Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher package -X, java.class.path=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Apache_Maven_3.6.0/boot/plexus-classworlds-2.5.2.jar, env.EXECUTOR_NUMBER=1, env.MAVEN_TERMINATE_CMD=on, maven.version=3.6.0, env.JENKINS_HOST_HOME=/data/jenkins, env.JENKINS_SLAVE_AGENT_PORT=50000, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.8, sun.cpu.endian=little, sun.os.patch.level=unknown, env.HOME=/var/jenkins_home, env.BUILD_URL=http://127.0.0.1:8080/job/teste2/3/, java.io.tmpdir=/tmp, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, env.JAVA_VERSION=8u181, maven.multiModuleProjectDirectory=/var/jenkins_home/workspace/teste2, maven.compiler.source=1.8, env.JENKINS_UC_EXPERIMENTAL=https://updates.jenkins.io/experimental, os.arch=amd64, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.ext.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext, env.MAVEN_HOME=/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Apache_Maven_3.6.0, user.dir=/var/jenkins_home/workspace/teste2, env.BUILD_ID=3, env.GIT_BRANCH=origin/master, line.separator=
+, env.JENKINS_URL=http://127.0.0.1:8080/, java.vm.name=OpenJDK 64-Bit Server VM, env.GIT_URL=https://github.com/henriquewestphal/argentum-web.git, env.GIT_COMMIT=56b8432c7a4dfc708de0969be3d354f15e3607cf, file.encoding=UTF-8, env.WORKSPACE=/var/jenkins_home/workspace/teste2, tomcat.version=7.0.64, arquillian.version=1.0.3.Final, java.specification.version=1.8, env.GIT_PREVIOUS_COMMIT=56b8432c7a4dfc708de0969be3d354f15e3607cf, env.NODE_LABELS=master, env.MAVEN_PROJECTBASEDIR=/var/jenkins_home/workspace/teste2}
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] resource with targetPath null
+directory /var/jenkins_home/workspace/teste2/src/test/resources
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 1 resource
+[DEBUG] file arquillian.xml has a filtered file extension
+[DEBUG] copy /var/jenkins_home/workspace/teste2/src/test/resources/arquillian.xml to /var/jenkins_home/workspace/teste2/target/test-classes/arquillian.xml
+[DEBUG] no use filter components
+[INFO] 
+[8mha:////4MEawC/u6INT+OtSbmkvB7R4kKyH8VyfcLvGi7Dv/4wwAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ argentum-web ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1, parent: sun.misc.Launcher$AppClassLoader@74a14482]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile' with basic configurator -->
+[DEBUG]   (f) basedir = /var/jenkins_home/workspace/teste2
+[DEBUG]   (f) buildDirectory = /var/jenkins_home/workspace/teste2/target
+[DEBUG]   (f) classpathElements = [/var/jenkins_home/workspace/teste2/target/test-classes, /var/jenkins_home/workspace/teste2/target/classes, /var/jenkins_home/.m2/repository/com/sun/faces/jsf-api/2.2.6/jsf-api-2.2.6.jar, /var/jenkins_home/.m2/repository/com/sun/faces/jsf-impl/2.2.6/jsf-impl-2.2.6.jar, /var/jenkins_home/.m2/repository/org/primefaces/primefaces/5.3/primefaces-5.3.jar, /var/jenkins_home/.m2/repository/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar, /var/jenkins_home/.m2/repository/com/thoughtworks/xstream/xstream/1.2.2/xstream-1.2.2.jar, /var/jenkins_home/.m2/repository/xpp3/xpp3_min/1.1.3.4.O/xpp3_min-1.1.3.4.O.jar, /var/jenkins_home/.m2/repository/junit/junit/4.9/junit-4.9.jar, /var/jenkins_home/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar, /var/jenkins_home/.m2/repository/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar, /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-java/2.41.0/selenium-java-2.41.0.jar, /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/2.41.0/selenium-chrome-driver-2.41.0.jar, /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-htmlunit-driver/2.41.0/selenium-htmlunit-driver-2.41.0.jar, /var/jenkins_home/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.13/htmlunit-2.13.jar, /var/jenkins_home/.m2/repository/xalan/xalan/2.7.1/xalan-2.7.1.jar, /var/jenkins_home/.m2/repository/xalan/serializer/2.7.1/serializer-2.7.1.jar, /var/jenkins_home/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar, /var/jenkins_home/.m2/repository/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar, /var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpmime/4.3.1/httpmime-4.3.1.jar, /var/jenkins_home/.m2/repository/commons-codec/commons-codec/1.8/commons-codec-1.8.jar, /var/jenkins_home/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.13/htmlunit-core-js-2.13.jar, /var/jenkins_home/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar, /var/jenkins_home/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar, /var/jenkins_home/.m2/repository/net/sourceforge/nekohtml/nekohtml/1.9.19/nekohtml-1.9.19.jar, /var/jenkins_home/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.11/cssparser-0.9.11.jar, /var/jenkins_home/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar, /var/jenkins_home/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar, /var/jenkins_home/.m2/repository/org/eclipse/jetty/jetty-websocket/8.1.12.v20130726/jetty-websocket-8.1.12.v20130726.jar, /var/jenkins_home/.m2/repository/org/eclipse/jetty/jetty-util/8.1.12.v20130726/jetty-util-8.1.12.v20130726.jar, /var/jenkins_home/.m2/repository/org/eclipse/jetty/jetty-io/8.1.12.v20130726/jetty-io-8.1.12.v20130726.jar, /var/jenkins_home/.m2/repository/org/eclipse/jetty/jetty-http/8.1.12.v20130726/jetty-http-8.1.12.v20130726.jar, /var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpclient/4.3.1/httpclient-4.3.1.jar, /var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpcore/4.3/httpcore-4.3.jar, /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/2.41.0/selenium-firefox-driver-2.41.0.jar, /var/jenkins_home/.m2/repository/commons-io/commons-io/2.2/commons-io-2.2.jar, /var/jenkins_home/.m2/repository/org/apache/commons/commons-exec/1.1/commons-exec-1.1.jar, /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.41.0/selenium-ie-driver-2.41.0.jar, /var/jenkins_home/.m2/repository/net/java/dev/jna/jna/3.4.0/jna-3.4.0.jar, /var/jenkins_home/.m2/repository/net/java/dev/jna/platform/3.4.0/platform-3.4.0.jar, /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/2.41.0/selenium-safari-driver-2.41.0.jar, /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-support/2.41.0/selenium-support-2.41.0.jar, /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-api/2.41.0/selenium-api-2.41.0.jar, /var/jenkins_home/.m2/repository/org/webbitserver/webbit/0.4.14/webbit-0.4.14.jar, /var/jenkins_home/.m2/repository/io/netty/netty/3.5.2.Final/netty-3.5.2.Final.jar, /var/jenkins_home/.m2/repository/com/github/detro/phantomjsdriver/1.2.0/phantomjsdriver-1.2.0.jar, /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/2.41.0/selenium-remote-driver-2.41.0.jar, /var/jenkins_home/.m2/repository/cglib/cglib-nodep/2.1_3/cglib-nodep-2.1_3.jar, /var/jenkins_home/.m2/repository/org/json/json/20080701/json-20080701.jar, /var/jenkins_home/.m2/repository/com/google/guava/guava/15.0/guava-15.0.jar, /var/jenkins_home/.m2/repository/org/jboss/arquillian/junit/arquillian-junit-container/1.0.3.Final/arquillian-junit-container-1.0.3.Final.jar, /var/jenkins_home/.m2/repository/org/jboss/arquillian/junit/arquillian-junit-core/1.0.3.Final/arquillian-junit-core-1.0.3.Final.jar, /var/jenkins_home/.m2/repository/org/jboss/arquillian/test/arquillian-test-api/1.0.3.Final/arquillian-test-api-1.0.3.Final.jar, /var/jenkins_home/.m2/repository/org/jboss/arquillian/core/arquillian-core-api/1.0.3.Final/arquillian-core-api-1.0.3.Final.jar, /var/jenkins_home/.m2/repository/org/jboss/arquillian/test/arquillian-test-spi/1.0.3.Final/arquillian-test-spi-1.0.3.Final.jar, /var/jenkins_home/.m2/repository/org/jboss/arquillian/core/arquillian-core-spi/1.0.3.Final/arquillian-core-spi-1.0.3.Final.jar, /var/jenkins_home/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-api/1.0.3.Final/arquillian-container-test-api-1.0.3.Final.jar, /var/jenkins_home/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-spi/1.0.3.Final/arquillian-container-test-spi-1.0.3.Final.jar, /var/jenkins_home/.m2/repository/org/jboss/arquillian/container/arquillian-container-spi/1.0.3.Final/arquillian-container-spi-1.0.3.Final.jar, /var/jenkins_home/.m2/repository/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-api-base/2.0.0-alpha-3/shrinkwrap-descriptors-api-base-2.0.0-alpha-3.jar, /var/jenkins_home/.m2/repository/org/jboss/arquillian/core/arquillian-core-impl-base/1.0.3.Final/arquillian-core-impl-base-1.0.3.Final.jar, /var/jenkins_home/.m2/repository/org/jboss/arquillian/test/arquillian-test-impl-base/1.0.3.Final/arquillian-test-impl-base-1.0.3.Final.jar, /var/jenkins_home/.m2/repository/org/jboss/arquillian/container/arquillian-container-impl-base/1.0.3.Final/arquillian-container-impl-base-1.0.3.Final.jar, /var/jenkins_home/.m2/repository/org/jboss/arquillian/config/arquillian-config-api/1.0.3.Final/arquillian-config-api-1.0.3.Final.jar, /var/jenkins_home/.m2/repository/org/jboss/arquillian/config/arquillian-config-impl-base/1.0.3.Final/arquillian-config-impl-base-1.0.3.Final.jar, /var/jenkins_home/.m2/repository/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-spi/2.0.0-alpha-3/shrinkwrap-descriptors-spi-2.0.0-alpha-3.jar, /var/jenkins_home/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-impl-base/1.0.3.Final/arquillian-container-test-impl-base-1.0.3.Final.jar, /var/jenkins_home/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-impl-base/1.0.1/shrinkwrap-impl-base-1.0.1.jar, /var/jenkins_home/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-spi/1.0.1/shrinkwrap-spi-1.0.1.jar, /var/jenkins_home/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-api-maven/1.0.0-beta-6/shrinkwrap-resolver-api-maven-1.0.0-beta-6.jar, /var/jenkins_home/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-api/1.0.0-cr-1/shrinkwrap-api-1.0.0-cr-1.jar, /var/jenkins_home/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-api/1.0.0-beta-6/shrinkwrap-resolver-api-1.0.0-beta-6.jar]
+[DEBUG]   (f) compileSourceRoots = [/var/jenkins_home/workspace/teste2/src/test/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedTestSourcesDirectory = /var/jenkins_home/workspace/teste2/target/generated-test-sources/test-annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile {execution: default-testCompile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /var/jenkins_home/workspace/teste2/target/test-classes
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.8
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.8
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG]   (f) mavenSession = org.apache.maven.execution.MavenSession@4a1c0752
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@4a1c0752
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Source directories: [/var/jenkins_home/workspace/teste2/src/test/java]
+[DEBUG] Classpath: [/var/jenkins_home/workspace/teste2/target/test-classes
+ /var/jenkins_home/workspace/teste2/target/classes
+ /var/jenkins_home/.m2/repository/com/sun/faces/jsf-api/2.2.6/jsf-api-2.2.6.jar
+ /var/jenkins_home/.m2/repository/com/sun/faces/jsf-impl/2.2.6/jsf-impl-2.2.6.jar
+ /var/jenkins_home/.m2/repository/org/primefaces/primefaces/5.3/primefaces-5.3.jar
+ /var/jenkins_home/.m2/repository/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar
+ /var/jenkins_home/.m2/repository/com/thoughtworks/xstream/xstream/1.2.2/xstream-1.2.2.jar
+ /var/jenkins_home/.m2/repository/xpp3/xpp3_min/1.1.3.4.O/xpp3_min-1.1.3.4.O.jar
+ /var/jenkins_home/.m2/repository/junit/junit/4.9/junit-4.9.jar
+ /var/jenkins_home/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar
+ /var/jenkins_home/.m2/repository/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar
+ /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-java/2.41.0/selenium-java-2.41.0.jar
+ /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/2.41.0/selenium-chrome-driver-2.41.0.jar
+ /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-htmlunit-driver/2.41.0/selenium-htmlunit-driver-2.41.0.jar
+ /var/jenkins_home/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.13/htmlunit-2.13.jar
+ /var/jenkins_home/.m2/repository/xalan/xalan/2.7.1/xalan-2.7.1.jar
+ /var/jenkins_home/.m2/repository/xalan/serializer/2.7.1/serializer-2.7.1.jar
+ /var/jenkins_home/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar
+ /var/jenkins_home/.m2/repository/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar
+ /var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpmime/4.3.1/httpmime-4.3.1.jar
+ /var/jenkins_home/.m2/repository/commons-codec/commons-codec/1.8/commons-codec-1.8.jar
+ /var/jenkins_home/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.13/htmlunit-core-js-2.13.jar
+ /var/jenkins_home/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar
+ /var/jenkins_home/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar
+ /var/jenkins_home/.m2/repository/net/sourceforge/nekohtml/nekohtml/1.9.19/nekohtml-1.9.19.jar
+ /var/jenkins_home/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.11/cssparser-0.9.11.jar
+ /var/jenkins_home/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar
+ /var/jenkins_home/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar
+ /var/jenkins_home/.m2/repository/org/eclipse/jetty/jetty-websocket/8.1.12.v20130726/jetty-websocket-8.1.12.v20130726.jar
+ /var/jenkins_home/.m2/repository/org/eclipse/jetty/jetty-util/8.1.12.v20130726/jetty-util-8.1.12.v20130726.jar
+ /var/jenkins_home/.m2/repository/org/eclipse/jetty/jetty-io/8.1.12.v20130726/jetty-io-8.1.12.v20130726.jar
+ /var/jenkins_home/.m2/repository/org/eclipse/jetty/jetty-http/8.1.12.v20130726/jetty-http-8.1.12.v20130726.jar
+ /var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpclient/4.3.1/httpclient-4.3.1.jar
+ /var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpcore/4.3/httpcore-4.3.jar
+ /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/2.41.0/selenium-firefox-driver-2.41.0.jar
+ /var/jenkins_home/.m2/repository/commons-io/commons-io/2.2/commons-io-2.2.jar
+ /var/jenkins_home/.m2/repository/org/apache/commons/commons-exec/1.1/commons-exec-1.1.jar
+ /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.41.0/selenium-ie-driver-2.41.0.jar
+ /var/jenkins_home/.m2/repository/net/java/dev/jna/jna/3.4.0/jna-3.4.0.jar
+ /var/jenkins_home/.m2/repository/net/java/dev/jna/platform/3.4.0/platform-3.4.0.jar
+ /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/2.41.0/selenium-safari-driver-2.41.0.jar
+ /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-support/2.41.0/selenium-support-2.41.0.jar
+ /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-api/2.41.0/selenium-api-2.41.0.jar
+ /var/jenkins_home/.m2/repository/org/webbitserver/webbit/0.4.14/webbit-0.4.14.jar
+ /var/jenkins_home/.m2/repository/io/netty/netty/3.5.2.Final/netty-3.5.2.Final.jar
+ /var/jenkins_home/.m2/repository/com/github/detro/phantomjsdriver/1.2.0/phantomjsdriver-1.2.0.jar
+ /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/2.41.0/selenium-remote-driver-2.41.0.jar
+ /var/jenkins_home/.m2/repository/cglib/cglib-nodep/2.1_3/cglib-nodep-2.1_3.jar
+ /var/jenkins_home/.m2/repository/org/json/json/20080701/json-20080701.jar
+ /var/jenkins_home/.m2/repository/com/google/guava/guava/15.0/guava-15.0.jar
+ /var/jenkins_home/.m2/repository/org/jboss/arquillian/junit/arquillian-junit-container/1.0.3.Final/arquillian-junit-container-1.0.3.Final.jar
+ /var/jenkins_home/.m2/repository/org/jboss/arquillian/junit/arquillian-junit-core/1.0.3.Final/arquillian-junit-core-1.0.3.Final.jar
+ /var/jenkins_home/.m2/repository/org/jboss/arquillian/test/arquillian-test-api/1.0.3.Final/arquillian-test-api-1.0.3.Final.jar
+ /var/jenkins_home/.m2/repository/org/jboss/arquillian/core/arquillian-core-api/1.0.3.Final/arquillian-core-api-1.0.3.Final.jar
+ /var/jenkins_home/.m2/repository/org/jboss/arquillian/test/arquillian-test-spi/1.0.3.Final/arquillian-test-spi-1.0.3.Final.jar
+ /var/jenkins_home/.m2/repository/org/jboss/arquillian/core/arquillian-core-spi/1.0.3.Final/arquillian-core-spi-1.0.3.Final.jar
+ /var/jenkins_home/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-api/1.0.3.Final/arquillian-container-test-api-1.0.3.Final.jar
+ /var/jenkins_home/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-spi/1.0.3.Final/arquillian-container-test-spi-1.0.3.Final.jar
+ /var/jenkins_home/.m2/repository/org/jboss/arquillian/container/arquillian-container-spi/1.0.3.Final/arquillian-container-spi-1.0.3.Final.jar
+ /var/jenkins_home/.m2/repository/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-api-base/2.0.0-alpha-3/shrinkwrap-descriptors-api-base-2.0.0-alpha-3.jar
+ /var/jenkins_home/.m2/repository/org/jboss/arquillian/core/arquillian-core-impl-base/1.0.3.Final/arquillian-core-impl-base-1.0.3.Final.jar
+ /var/jenkins_home/.m2/repository/org/jboss/arquillian/test/arquillian-test-impl-base/1.0.3.Final/arquillian-test-impl-base-1.0.3.Final.jar
+ /var/jenkins_home/.m2/repository/org/jboss/arquillian/container/arquillian-container-impl-base/1.0.3.Final/arquillian-container-impl-base-1.0.3.Final.jar
+ /var/jenkins_home/.m2/repository/org/jboss/arquillian/config/arquillian-config-api/1.0.3.Final/arquillian-config-api-1.0.3.Final.jar
+ /var/jenkins_home/.m2/repository/org/jboss/arquillian/config/arquillian-config-impl-base/1.0.3.Final/arquillian-config-impl-base-1.0.3.Final.jar
+ /var/jenkins_home/.m2/repository/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-spi/2.0.0-alpha-3/shrinkwrap-descriptors-spi-2.0.0-alpha-3.jar
+ /var/jenkins_home/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-impl-base/1.0.3.Final/arquillian-container-test-impl-base-1.0.3.Final.jar
+ /var/jenkins_home/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-impl-base/1.0.1/shrinkwrap-impl-base-1.0.1.jar
+ /var/jenkins_home/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-spi/1.0.1/shrinkwrap-spi-1.0.1.jar
+ /var/jenkins_home/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-api-maven/1.0.0-beta-6/shrinkwrap-resolver-api-maven-1.0.0-beta-6.jar
+ /var/jenkins_home/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-api/1.0.0-cr-1/shrinkwrap-api-1.0.0-cr-1.jar
+ /var/jenkins_home/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-api/1.0.0-beta-6/shrinkwrap-resolver-api-1.0.0-beta-6.jar]
+[DEBUG] Output directory: /var/jenkins_home/workspace/teste2/target/test-classes
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[8mha:////4MEawC/u6INT+OtSbmkvB7R4kKyH8VyfcLvGi7Dv/4wwAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ argentum-web ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=108021, ConflictMarker.markTime=43219, ConflictMarker.nodeCount=132, ConflictIdSorter.graphTime=41821, ConflictIdSorter.topsortTime=19457, ConflictIdSorter.conflictIdCount=27, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=441488, ConflictResolver.conflictItemCount=77, DefaultDependencyCollector.collectTime=12861709, DefaultDependencyCollector.transformTime=670401}
+[DEBUG] org.apache.maven.plugins:maven-surefire-plugin:jar:2.12.4:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.9:compile
+[DEBUG]    org.apache.maven.surefire:surefire-booter:jar:2.12.4:compile
+[DEBUG]       org.apache.maven.surefire:surefire-api:jar:2.12.4:compile
+[DEBUG]    org.apache.maven.surefire:maven-surefire-common:jar:2.12.4:compile
+[DEBUG]       org.apache.commons:commons-lang3:jar:3.1:compile
+[DEBUG]       org.apache.maven.shared:maven-common-artifact-filters:jar:1.3:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.8:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.9:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:3.8.1:test
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.9:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:2.0.9:compile
+[DEBUG]    org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.1:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.12.4
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.12.4
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.12.4
+[DEBUG]   Included: org.apache.maven.plugins:maven-surefire-plugin:jar:2.12.4
+[DEBUG]   Included: org.apache.maven.surefire:surefire-booter:jar:2.12.4
+[DEBUG]   Included: org.apache.maven.surefire:surefire-api:jar:2.12.4
+[DEBUG]   Included: org.apache.maven.surefire:maven-surefire-common:jar:2.12.4
+[DEBUG]   Included: org.apache.commons:commons-lang3:jar:3.1
+[DEBUG]   Included: org.apache.maven.shared:maven-common-artifact-filters:jar:1.3
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.8
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.9
+[DEBUG]   Included: org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-surefire-plugin:2.12.4, parent: sun.misc.Launcher$AppClassLoader@74a14482]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test' with basic configurator -->
+[DEBUG]   (s) argLine = -javaagent:/var/jenkins_home/.m2/repository/org/jacoco/org.jacoco.agent/0.7.6.201602180812/org.jacoco.agent-0.7.6.201602180812-runtime.jar=destfile=/var/jenkins_home/workspace/teste2/target/jacoco.exec
+[DEBUG]   (s) basedir = /var/jenkins_home/workspace/teste2
+[DEBUG]   (s) childDelegation = false
+[DEBUG]   (s) classesDirectory = /var/jenkins_home/workspace/teste2/target/classes
+[DEBUG]   (s) disableXmlReport = false
+[DEBUG]   (s) enableAssertions = true
+[DEBUG]   (s) forkMode = once
+[DEBUG]   (s) junitArtifactName = junit:junit
+[DEBUG]   (s) localRepository =       id: local
+      url: file:///var/jenkins_home/.m2/repository/
+   layout: default
+snapshots: [enabled => true, update => always]
+ releases: [enabled => true, update => always]
+
+[DEBUG]   (f) parallelMavenExecution = false
+[DEBUG]   (s) perCoreThreadCount = true
+[DEBUG]   (s) pluginArtifactMap = {org.apache.maven.plugins:maven-surefire-plugin=org.apache.maven.plugins:maven-surefire-plugin:maven-plugin:2.12.4:, org.apache.maven:maven-plugin-api=org.apache.maven:maven-plugin-api:jar:2.0.9:compile, org.apache.maven.surefire:surefire-booter=org.apache.maven.surefire:surefire-booter:jar:2.12.4:compile, org.apache.maven.surefire:surefire-api=org.apache.maven.surefire:surefire-api:jar:2.12.4:compile, org.apache.maven.surefire:maven-surefire-common=org.apache.maven.surefire:maven-surefire-common:jar:2.12.4:compile, org.apache.commons:commons-lang3=org.apache.commons:commons-lang3:jar:3.1:compile, org.apache.maven.shared:maven-common-artifact-filters=org.apache.maven.shared:maven-common-artifact-filters:jar:1.3:compile, org.codehaus.plexus:plexus-utils=org.codehaus.plexus:plexus-utils:jar:3.0.8:compile, org.apache.maven:maven-artifact=org.apache.maven:maven-artifact:jar:2.0.9:compile, org.apache.maven:maven-project=org.apache.maven:maven-project:jar:2.0.9:compile, org.apache.maven:maven-settings=org.apache.maven:maven-settings:jar:2.0.9:compile, org.apache.maven:maven-profile=org.apache.maven:maven-profile:jar:2.0.9:compile, org.apache.maven:maven-model=org.apache.maven:maven-model:jar:2.0.9:compile, org.apache.maven:maven-artifact-manager=org.apache.maven:maven-artifact-manager:jar:2.0.9:compile, org.apache.maven:maven-plugin-registry=org.apache.maven:maven-plugin-registry:jar:2.0.9:compile, org.codehaus.plexus:plexus-container-default=org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile, org.apache.maven:maven-core=org.apache.maven:maven-core:jar:2.0.9:compile, org.apache.maven:maven-plugin-parameter-documenter=org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile, org.apache.maven.reporting:maven-reporting-api=org.apache.maven.reporting:maven-reporting-api:jar:2.0.9:compile, org.apache.maven:maven-repository-metadata=org.apache.maven:maven-repository-metadata:jar:2.0.9:compile, org.apache.maven:maven-error-diagnostics=org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile, org.apache.maven:maven-plugin-descriptor=org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile, org.apache.maven:maven-monitor=org.apache.maven:maven-monitor:jar:2.0.9:compile, classworlds:classworlds=classworlds:classworlds:jar:1.1:compile, org.apache.maven:maven-toolchain=org.apache.maven:maven-toolchain:jar:2.0.9:compile, org.apache.maven.plugin-tools:maven-plugin-annotations=org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.1:compile}
+[DEBUG]   (f) pluginDescriptor = Component Descriptor: role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.maven.plugin.surefire.HelpMojo', role hint: 'org.apache.maven.plugins:maven-surefire-plugin:2.12.4:help'
+role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.maven.plugin.surefire.SurefirePlugin', role hint: 'org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test'
+---
+[DEBUG]   (s) printSummary = true
+[DEBUG]   (s) projectArtifactMap = {com.sun.faces:jsf-api=com.sun.faces:jsf-api:jar:2.2.6:compile, com.sun.faces:jsf-impl=com.sun.faces:jsf-impl:jar:2.2.6:compile, org.primefaces:primefaces=org.primefaces:primefaces:jar:5.3:compile, javax.servlet:javax.servlet-api=javax.servlet:javax.servlet-api:jar:3.0.1:provided, com.thoughtworks.xstream:xstream=com.thoughtworks.xstream:xstream:jar:1.2.2:compile, xpp3:xpp3_min=xpp3:xpp3_min:jar:1.1.3.4.O:compile, junit:junit=junit:junit:jar:4.9:test, org.hamcrest:hamcrest-core=org.hamcrest:hamcrest-core:jar:1.1:test, org.mockito:mockito-all=org.mockito:mockito-all:jar:1.10.19:test, org.seleniumhq.selenium:selenium-java=org.seleniumhq.selenium:selenium-java:jar:2.41.0:test, org.seleniumhq.selenium:selenium-chrome-driver=org.seleniumhq.selenium:selenium-chrome-driver:jar:2.41.0:test, org.seleniumhq.selenium:selenium-htmlunit-driver=org.seleniumhq.selenium:selenium-htmlunit-driver:jar:2.41.0:test, net.sourceforge.htmlunit:htmlunit=net.sourceforge.htmlunit:htmlunit:jar:2.13:test, xalan:xalan=xalan:xalan:jar:2.7.1:test, xalan:serializer=xalan:serializer:jar:2.7.1:test, commons-collections:commons-collections=commons-collections:commons-collections:jar:3.2.1:test, org.apache.commons:commons-lang3=org.apache.commons:commons-lang3:jar:3.1:test, org.apache.httpcomponents:httpmime=org.apache.httpcomponents:httpmime:jar:4.3.1:test, commons-codec:commons-codec=commons-codec:commons-codec:jar:1.8:test, net.sourceforge.htmlunit:htmlunit-core-js=net.sourceforge.htmlunit:htmlunit-core-js:jar:2.13:test, xerces:xercesImpl=xerces:xercesImpl:jar:2.11.0:test, xml-apis:xml-apis=xml-apis:xml-apis:jar:1.4.01:test, net.sourceforge.nekohtml:nekohtml=net.sourceforge.nekohtml:nekohtml:jar:1.9.19:test, net.sourceforge.cssparser:cssparser=net.sourceforge.cssparser:cssparser:jar:0.9.11:test, org.w3c.css:sac=org.w3c.css:sac:jar:1.3:test, commons-logging:commons-logging=commons-logging:commons-logging:jar:1.1.3:test, org.eclipse.jetty:jetty-websocket=org.eclipse.jetty:jetty-websocket:jar:8.1.12.v20130726:test, org.eclipse.jetty:jetty-util=org.eclipse.jetty:jetty-util:jar:8.1.12.v20130726:test, org.eclipse.jetty:jetty-io=org.eclipse.jetty:jetty-io:jar:8.1.12.v20130726:test, org.eclipse.jetty:jetty-http=org.eclipse.jetty:jetty-http:jar:8.1.12.v20130726:test, org.apache.httpcomponents:httpclient=org.apache.httpcomponents:httpclient:jar:4.3.1:test, org.apache.httpcomponents:httpcore=org.apache.httpcomponents:httpcore:jar:4.3:test, org.seleniumhq.selenium:selenium-firefox-driver=org.seleniumhq.selenium:selenium-firefox-driver:jar:2.41.0:test, commons-io:commons-io=commons-io:commons-io:jar:2.2:test, org.apache.commons:commons-exec=org.apache.commons:commons-exec:jar:1.1:test, org.seleniumhq.selenium:selenium-ie-driver=org.seleniumhq.selenium:selenium-ie-driver:jar:2.41.0:test, net.java.dev.jna:jna=net.java.dev.jna:jna:jar:3.4.0:test, net.java.dev.jna:platform=net.java.dev.jna:platform:jar:3.4.0:test, org.seleniumhq.selenium:selenium-safari-driver=org.seleniumhq.selenium:selenium-safari-driver:jar:2.41.0:test, org.seleniumhq.selenium:selenium-support=org.seleniumhq.selenium:selenium-support:jar:2.41.0:test, org.seleniumhq.selenium:selenium-api=org.seleniumhq.selenium:selenium-api:jar:2.41.0:test, org.webbitserver:webbit=org.webbitserver:webbit:jar:0.4.14:test, io.netty:netty=io.netty:netty:jar:3.5.2.Final:test, com.github.detro:phantomjsdriver=com.github.detro:phantomjsdriver:jar:1.2.0:test, org.seleniumhq.selenium:selenium-remote-driver=org.seleniumhq.selenium:selenium-remote-driver:jar:2.41.0:test, cglib:cglib-nodep=cglib:cglib-nodep:jar:2.1_3:test, org.json:json=org.json:json:jar:20080701:test, com.google.guava:guava=com.google.guava:guava:jar:15.0:test, org.jboss.arquillian.junit:arquillian-junit-container=org.jboss.arquillian.junit:arquillian-junit-container:jar:1.0.3.Final:test, org.jboss.arquillian.junit:arquillian-junit-core=org.jboss.arquillian.junit:arquillian-junit-core:jar:1.0.3.Final:test, org.jboss.arquillian.test:arquillian-test-api=org.jboss.arquillian.test:arquillian-test-api:jar:1.0.3.Final:test, org.jboss.arquillian.core:arquillian-core-api=org.jboss.arquillian.core:arquillian-core-api:jar:1.0.3.Final:test, org.jboss.arquillian.test:arquillian-test-spi=org.jboss.arquillian.test:arquillian-test-spi:jar:1.0.3.Final:test, org.jboss.arquillian.core:arquillian-core-spi=org.jboss.arquillian.core:arquillian-core-spi:jar:1.0.3.Final:test, org.jboss.arquillian.container:arquillian-container-test-api=org.jboss.arquillian.container:arquillian-container-test-api:jar:1.0.3.Final:test, org.jboss.arquillian.container:arquillian-container-test-spi=org.jboss.arquillian.container:arquillian-container-test-spi:jar:1.0.3.Final:test, org.jboss.arquillian.container:arquillian-container-spi=org.jboss.arquillian.container:arquillian-container-spi:jar:1.0.3.Final:test, org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-api-base=org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-api-base:jar:2.0.0-alpha-3:test, org.jboss.arquillian.core:arquillian-core-impl-base=org.jboss.arquillian.core:arquillian-core-impl-base:jar:1.0.3.Final:test, org.jboss.arquillian.test:arquillian-test-impl-base=org.jboss.arquillian.test:arquillian-test-impl-base:jar:1.0.3.Final:test, org.jboss.arquillian.container:arquillian-container-impl-base=org.jboss.arquillian.container:arquillian-container-impl-base:jar:1.0.3.Final:test, org.jboss.arquillian.config:arquillian-config-api=org.jboss.arquillian.config:arquillian-config-api:jar:1.0.3.Final:test, org.jboss.arquillian.config:arquillian-config-impl-base=org.jboss.arquillian.config:arquillian-config-impl-base:jar:1.0.3.Final:test, org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-spi=org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-spi:jar:2.0.0-alpha-3:test, org.jboss.arquillian.container:arquillian-container-test-impl-base=org.jboss.arquillian.container:arquillian-container-test-impl-base:jar:1.0.3.Final:test, org.jboss.shrinkwrap:shrinkwrap-impl-base=org.jboss.shrinkwrap:shrinkwrap-impl-base:jar:1.0.1:test, org.jboss.shrinkwrap:shrinkwrap-spi=org.jboss.shrinkwrap:shrinkwrap-spi:jar:1.0.1:test, org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api-maven=org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api-maven:jar:1.0.0-beta-6:test, org.jboss.shrinkwrap:shrinkwrap-api=org.jboss.shrinkwrap:shrinkwrap-api:jar:1.0.0-cr-1:test, org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api=org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api:jar:1.0.0-beta-6:test}
+[DEBUG]   (s) redirectTestOutputToFile = false
+[DEBUG]   (s) remoteRepositories = [      id: central
+      url: https://repo.maven.apache.org/maven2
+   layout: default
+snapshots: [enabled => false, update => daily]
+ releases: [enabled => true, update => never]
+]
+[DEBUG]   (s) reportFormat = brief
+[DEBUG]   (s) reportsDirectory = /var/jenkins_home/workspace/teste2/target/surefire-reports
+[DEBUG]   (s) runOrder = filesystem
+[DEBUG]   (s) skip = false
+[DEBUG]   (s) skipTests = false
+[DEBUG]   (s) testClassesDirectory = /var/jenkins_home/workspace/teste2/target/test-classes
+[DEBUG]   (s) testFailureIgnore = false
+[DEBUG]   (s) testNGArtifactName = org.testng:testng
+[DEBUG]   (s) testSourceDirectory = /var/jenkins_home/workspace/teste2/src/test/java
+[DEBUG]   (s) trimStackTrace = true
+[DEBUG]   (s) useFile = true
+[DEBUG]   (s) useManifestOnlyJar = true
+[DEBUG]   (s) useSystemClassLoader = true
+[DEBUG]   (s) useUnlimitedThreads = false
+[DEBUG]   (s) workingDirectory = /var/jenkins_home/workspace/teste2
+[DEBUG]   (s) project = MavenProject: br.com.caelum.argentum:argentum-web:1.0.0-SNAPSHOT @ /var/jenkins_home/workspace/teste2/pom.xml
+[DEBUG]   (s) session = org.apache.maven.execution.MavenSession@4a1c0752
+[DEBUG] -- end configuration --
+[INFO] Surefire report directory: /var/jenkins_home/workspace/teste2/target/surefire-reports
+[DEBUG] Setting system property [user.dir]=[/var/jenkins_home/workspace/teste2]
+[DEBUG] Setting system property [localRepository]=[/var/jenkins_home/.m2/repository]
+[DEBUG] Setting system property [basedir]=[/var/jenkins_home/workspace/teste2]
+[DEBUG] dummy:dummy:jar:1.0 (selected for null)
+[DEBUG]   org.apache.maven.surefire:surefire-booter:jar:2.12.4:compile (selected for compile)
+[DEBUG]     org.apache.maven.surefire:surefire-api:jar:2.12.4:compile (selected for compile)
+[DEBUG] Adding to surefire booter test classpath: /var/jenkins_home/.m2/repository/org/apache/maven/surefire/surefire-booter/2.12.4/surefire-booter-2.12.4.jar Scope: compile
+[DEBUG] Adding to surefire booter test classpath: /var/jenkins_home/.m2/repository/org/apache/maven/surefire/surefire-api/2.12.4/surefire-api-2.12.4.jar Scope: compile
+[DEBUG] Using JVM: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+[DEBUG] dummy:dummy:jar:1.0 (selected for null)
+[DEBUG]   org.apache.maven.surefire:surefire-junit4:jar:2.12.4:test (selected for test)
+[DEBUG]     org.apache.maven.surefire:surefire-api:jar:2.12.4:test (selected for test)
+[DEBUG] Adding to surefire test classpath: /var/jenkins_home/.m2/repository/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar Scope: test
+[DEBUG] Adding to surefire test classpath: /var/jenkins_home/.m2/repository/org/apache/maven/surefire/surefire-api/2.12.4/surefire-api-2.12.4.jar Scope: test
+[DEBUG] test classpath classpath:
+[DEBUG]   /var/jenkins_home/workspace/teste2/target/test-classes
+[DEBUG]   /var/jenkins_home/workspace/teste2/target/classes
+[DEBUG]   /var/jenkins_home/.m2/repository/com/sun/faces/jsf-api/2.2.6/jsf-api-2.2.6.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/com/sun/faces/jsf-impl/2.2.6/jsf-impl-2.2.6.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/primefaces/primefaces/5.3/primefaces-5.3.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/com/thoughtworks/xstream/xstream/1.2.2/xstream-1.2.2.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/xpp3/xpp3_min/1.1.3.4.O/xpp3_min-1.1.3.4.O.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/junit/junit/4.9/junit-4.9.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-java/2.41.0/selenium-java-2.41.0.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/2.41.0/selenium-chrome-driver-2.41.0.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-htmlunit-driver/2.41.0/selenium-htmlunit-driver-2.41.0.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.13/htmlunit-2.13.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/xalan/xalan/2.7.1/xalan-2.7.1.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/xalan/serializer/2.7.1/serializer-2.7.1.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpmime/4.3.1/httpmime-4.3.1.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/commons-codec/commons-codec/1.8/commons-codec-1.8.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.13/htmlunit-core-js-2.13.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/net/sourceforge/nekohtml/nekohtml/1.9.19/nekohtml-1.9.19.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.11/cssparser-0.9.11.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/eclipse/jetty/jetty-websocket/8.1.12.v20130726/jetty-websocket-8.1.12.v20130726.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/eclipse/jetty/jetty-util/8.1.12.v20130726/jetty-util-8.1.12.v20130726.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/eclipse/jetty/jetty-io/8.1.12.v20130726/jetty-io-8.1.12.v20130726.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/eclipse/jetty/jetty-http/8.1.12.v20130726/jetty-http-8.1.12.v20130726.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpclient/4.3.1/httpclient-4.3.1.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpcore/4.3/httpcore-4.3.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/2.41.0/selenium-firefox-driver-2.41.0.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/commons-io/commons-io/2.2/commons-io-2.2.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/apache/commons/commons-exec/1.1/commons-exec-1.1.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.41.0/selenium-ie-driver-2.41.0.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/net/java/dev/jna/jna/3.4.0/jna-3.4.0.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/net/java/dev/jna/platform/3.4.0/platform-3.4.0.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/2.41.0/selenium-safari-driver-2.41.0.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-support/2.41.0/selenium-support-2.41.0.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-api/2.41.0/selenium-api-2.41.0.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/webbitserver/webbit/0.4.14/webbit-0.4.14.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/io/netty/netty/3.5.2.Final/netty-3.5.2.Final.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/com/github/detro/phantomjsdriver/1.2.0/phantomjsdriver-1.2.0.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/2.41.0/selenium-remote-driver-2.41.0.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/cglib/cglib-nodep/2.1_3/cglib-nodep-2.1_3.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/json/json/20080701/json-20080701.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/com/google/guava/guava/15.0/guava-15.0.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/jboss/arquillian/junit/arquillian-junit-container/1.0.3.Final/arquillian-junit-container-1.0.3.Final.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/jboss/arquillian/junit/arquillian-junit-core/1.0.3.Final/arquillian-junit-core-1.0.3.Final.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/jboss/arquillian/test/arquillian-test-api/1.0.3.Final/arquillian-test-api-1.0.3.Final.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/jboss/arquillian/core/arquillian-core-api/1.0.3.Final/arquillian-core-api-1.0.3.Final.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/jboss/arquillian/test/arquillian-test-spi/1.0.3.Final/arquillian-test-spi-1.0.3.Final.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/jboss/arquillian/core/arquillian-core-spi/1.0.3.Final/arquillian-core-spi-1.0.3.Final.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-api/1.0.3.Final/arquillian-container-test-api-1.0.3.Final.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-spi/1.0.3.Final/arquillian-container-test-spi-1.0.3.Final.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/jboss/arquillian/container/arquillian-container-spi/1.0.3.Final/arquillian-container-spi-1.0.3.Final.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-api-base/2.0.0-alpha-3/shrinkwrap-descriptors-api-base-2.0.0-alpha-3.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/jboss/arquillian/core/arquillian-core-impl-base/1.0.3.Final/arquillian-core-impl-base-1.0.3.Final.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/jboss/arquillian/test/arquillian-test-impl-base/1.0.3.Final/arquillian-test-impl-base-1.0.3.Final.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/jboss/arquillian/container/arquillian-container-impl-base/1.0.3.Final/arquillian-container-impl-base-1.0.3.Final.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/jboss/arquillian/config/arquillian-config-api/1.0.3.Final/arquillian-config-api-1.0.3.Final.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/jboss/arquillian/config/arquillian-config-impl-base/1.0.3.Final/arquillian-config-impl-base-1.0.3.Final.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-spi/2.0.0-alpha-3/shrinkwrap-descriptors-spi-2.0.0-alpha-3.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-impl-base/1.0.3.Final/arquillian-container-test-impl-base-1.0.3.Final.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-impl-base/1.0.1/shrinkwrap-impl-base-1.0.1.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-spi/1.0.1/shrinkwrap-spi-1.0.1.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-api-maven/1.0.0-beta-6/shrinkwrap-resolver-api-maven-1.0.0-beta-6.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-api/1.0.0-cr-1/shrinkwrap-api-1.0.0-cr-1.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-api/1.0.0-beta-6/shrinkwrap-resolver-api-1.0.0-beta-6.jar
+[DEBUG] provider classpath classpath:
+[DEBUG]   /var/jenkins_home/.m2/repository/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[DEBUG]   /var/jenkins_home/.m2/repository/org/apache/maven/surefire/surefire-api/2.12.4/surefire-api-2.12.4.jar
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Forking command line: /bin/sh -c cd /var/jenkins_home/workspace/teste2 && /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -javaagent:/var/jenkins_home/.m2/repository/org/jacoco/org.jacoco.agent/0.7.6.201602180812/org.jacoco.agent-0.7.6.201602180812-runtime.jar=destfile=/var/jenkins_home/workspace/teste2/target/jacoco.exec -jar /var/jenkins_home/workspace/teste2/target/surefire/surefirebooter8009473131522719614.jar /var/jenkins_home/workspace/teste2/target/surefire/surefire4124835594978675970tmp /var/jenkins_home/workspace/teste2/target/surefire/surefire_05538435266508894485tmp
+Error: Could not find or load main class org.apache.maven.surefire.booter.ForkedBooter
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.216 s
+[INFO] Finished at: 2019-03-12T21:47:36Z
+[INFO] ------------------------------------------------------------------------
+[8mha:////4COtuEA2g3/qCJWbY5zNEmRLBABWSl4ECWNf6s5XiSmQAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project argentum-web: Execution default-test of goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test failed: The forked VM terminated without saying properly goodbye. VM crash or System.exit called ? -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project argentum-web: Execution default-test of goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test failed: The forked VM terminated without saying properly goodbye. VM crash or System.exit called ?
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:215)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:956)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:288)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:192)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:289)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:229)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:415)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:356)
+Caused by: org.apache.maven.plugin.PluginExecutionException: Execution default-test of goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test failed: The forked VM terminated without saying properly goodbye. VM crash or System.exit called ?
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:148)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:956)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:288)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:192)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:289)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:229)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:415)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:356)
+Caused by: java.lang.RuntimeException: The forked VM terminated without saying properly goodbye. VM crash or System.exit called ?
+    at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.close (ForkClient.java:257)
+    at org.apache.maven.plugin.surefire.booterclient.ForkStarter.fork (ForkStarter.java:301)
+    at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run (ForkStarter.java:116)
+    at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider (AbstractSurefireMojo.java:740)
+    at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAllProviders (AbstractSurefireMojo.java:682)
+    at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked (AbstractSurefireMojo.java:648)
+    at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute (AbstractSurefireMojo.java:586)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:956)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:288)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:192)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:289)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:229)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:415)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:356)
+[8mha:////4COtuEA2g3/qCJWbY5zNEmRLBABWSl4ECWNf6s5XiSmQAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4COtuEA2g3/qCJWbY5zNEmRLBABWSl4ECWNf6s5XiSmQAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4COtuEA2g3/qCJWbY5zNEmRLBABWSl4ECWNf6s5XiSmQAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4COtuEA2g3/qCJWbY5zNEmRLBABWSl4ECWNf6s5XiSmQAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE
