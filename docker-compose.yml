@@ -13,9 +13,9 @@ services:
       - '8443:8443'
       - '50000:50000'
     volumes:
-      - /data/jenkins_home:/var/jenkins_home
+      - ./jenkins_home:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
-      - /data/tomcat/webapps:/tomcat
+      - ./tomcat/webapps:/tomcat
 
   tomcat:
     image: tomcat:latest
@@ -29,8 +29,8 @@ services:
       - JPDA_ADDRESS=8000
       - JPDA_TRANSPORT=dt_socke
     volumes:
-            # - /data/tomcat/conf:/usr/local/tomcat/conf
-      - /data/tomcat/webapps:/usr/local/tomcat/webapps
+            # - ./tomcat/conf:/usr/local/tomcat/conf
+      - ./tomcat/webapps:/usr/local/tomcat/webapps
 
 networks:
   frontend:
