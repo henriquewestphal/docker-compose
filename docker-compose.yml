@@ -31,6 +31,13 @@ services:
     volumes:
             # - ./tomcat/conf:/usr/local/tomcat/conf
       - ./tomcat/webapps:/usr/local/tomcat/webapps
+    deploy:
+      replicas: 3
+      update_config: 3
+        parallelism: 3
+        delay: 10s
+      restart_policy:
+        condition: on-failure
 
 networks:
   frontend:
