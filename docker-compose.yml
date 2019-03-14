@@ -51,6 +51,10 @@ services:
       - jenkins-workers:/var/jenkins_home # Avoid mysql volume mount issue
     depends_on:
       - jenkins
+    deploy:
+      replicas: 2
+      placement:
+        constraints: [node.role == worker]
 
 
 networks:
